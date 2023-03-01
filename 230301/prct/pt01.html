@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="root">
+    <div></div>
+    <div></div>
+  </div>
+
+  <script>
+    let root = document.getElementById('root');
+    rootChild = root.children;
+    console.dir(rootChild[0]);
+
+
+    function styleSet(child, w, h, c, c2) {
+
+
+        child[0].style.width = w,
+        child[0].style.height = h,
+        child[0].style.backgroundColor = c,
+
+        child[1].style.width = w,
+        child[1].style.height = h,
+        child[1].style.backgroundColor = c2,
+    }
+
+
+    styleSet(rootChild, "100px", "100px", "red", "blue");
+
+    function style(a, b, c) {
+
+      styleSet();
+      obj = {
+
+
+
+
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>

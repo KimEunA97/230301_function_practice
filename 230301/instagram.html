@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 공용 css */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* box1,2를 감싸는 컨테이너 */
+    .box_Container {
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    /* 슬라이드 , 로그인 탭 */
+    .box1,
+    .box2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 42vw;
+      height: 50vh;
+      background-color: green;
+      margin: 10px;
+
+    }
+
+    /* 로그인 컨테이너 */
+    .box2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 42vw;
+      height: 50vh;
+      background-color: green;
+      margin: 10px;
+      justify-content: space-around;
+    }
+
+    /* 박스2의 로그인 섹션 */
+    .box2_Login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 80%;
+      height: 60%;
+      background-color: aqua;
+    }
+
+    /* 박스2_로그인 섹션 > 로그인창 */
+    .box2_Login>div {
+      background-color: blanchedalmond;
+      width: 80%;
+      height: 20%;
+    }
+
+    /* 박스2의 회원가입 섹션 */
+    .box2_Join {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 30%;
+      background-color: beige;
+    }
+
+    /* 발바닥 */
+    footer {
+      width: 100vw;
+      height: 10vh;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer>div {
+      width: 70%;
+      height: 50%;
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 컨테이너 -->
+  <div id="wrap">
+
+    <div class="box_Container">
+      <!-- 슬라이드 이미지 -->
+      <div class="box1">
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- 로그인 구역 컨테이너-->
+      <div class="box2">
+        <!-- 로그인창 감싸는 큰 컨테이너 -->
+        <div class="box2_Login">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- 계정 없으면 가입 -->
+        <div class="box2_Join">
+          <div></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+      <div></div>
+    </footer>
+
+
+  </div>
+
+
+</body>
+
+</html>
+<script src="./insta.js"></script>
